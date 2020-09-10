@@ -12,8 +12,12 @@
 ##  Returns a list of functions:
 ##   set(y): stores a new matrix (y), clears the inverse matrix in the cache;
 ##   get(): returns the matrix stored;
-##   set_inv(new_inv): stores a new inverse to the matrix stored;
-##   get_inv(): returns the inverse matrix in the cache, if it has been calculated already 
+##   set_inv(new_inv): stores a new inverse (new_inv) to the matrix stored;
+##   get_inv(): returns the inverse matrix in the cache, if it has been 
+##              calculated already 
+##   Obs.: When using the set_inv function, make sure that the argument being
+##         passed is in fact, the inverse. I advise to only call this function
+##         inside the cacheSolve function.
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
