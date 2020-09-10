@@ -11,7 +11,7 @@
 ##   get_inv(): returns the inverse matrix (inv) in the cache, if it has been 
 ##              calculated already 
 ##   Obs 1: When using the set_inv function, make sure that the argument being
-##          passed is in fact, the inverse. I advise to only call this function
+##          passed is, in fact, the inverse. I advise to only call this function
 ##          inside the cacheSolve function.
 ##   Obs 2: Also, the get_inv function will only return the inverse if it has been 
 ##          calculated already. I advise to only call this function inside the
@@ -25,7 +25,7 @@
 
 ## Write a short comment describing this function
 ## makeCacheMatrix:
-##  Returns a list of functions (set, get, set_inv, get_inv)
+##  Stores a matrix (x) and returns a list of functions (set, get, set_inv, get_inv)
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -43,7 +43,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 ## cacheSolve: R
-##  Returns the inverse matrix
+##  Returns the inverse matrix of x
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
