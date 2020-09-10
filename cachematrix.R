@@ -18,6 +18,8 @@
 ##          cacheSolve function.
 
 ## cacheSolve
+##  Parameter:
+##   x: list returned by function makeCacheMatrix
 ##  Returns the inverse matrix.
 ##   If the inverse has already been calculated, it gets the matrix from the cache 
 ##   Otherwise, it calculates the inverse, and saves the inverse in the cache
