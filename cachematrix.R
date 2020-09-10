@@ -8,7 +8,8 @@
 ## Write a short comment describing this function
 
 ## makeCacheMatrix
-##  Returns a list of functions.
+##  Stores a matrix and its inverse, if calculated.
+##  Returns a list of functions:
 ##   set(y): stores a new matrix (y), clears the inverse matrix in the cache;
 ##   get(): returns the matrix stored;
 ##   set_inv(new_inv): stores a new inverse to the matrix stored;
