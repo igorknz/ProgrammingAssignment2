@@ -1,23 +1,31 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## makeCacheMatrix: returns a list of functions (set, get, set_inv, get_inv)
-## cacheSolve: returns the inverse function
+
+## makeCacheMatrix
+##  Stores a matrix (x) and its inverse (inv), if calculated.
+##  Returns a list of functions:
+##   set(y): stores a new matrix (y), and clears the inverse matrix (inv) in the cache;
+##   get(): returns the matrix (x) stored;
+##   set_inv(new_inv): stores a new inverse (new_inv) of the matrix stored;
+##   get_inv(): returns the inverse matrix in the cache, if it has been 
+##              calculated already 
+##   Obs 1: When using the set_inv function, make sure that the argument being
+##          passed is in fact, the inverse. I advise to only call this function
+##          inside the cacheSolve function.
+##   Obs 2: Also, the get_inv function will only return the inverse if it has been 
+##          calculated already. I advise to only call this function inside the
+##          cacheSolve function.
+
+## cacheSolve
+##  Returns the inverse matrix.
+##   If the inverse has already been calculated, it gets the matrix from the cache 
+##   Otherwise, it calculates the inverse, and saves the inverse in the cache
 
 
 ## Write a short comment describing this function
-
-## makeCacheMatrix
-##  Stores a matrix and its inverse, if calculated.
-##  Returns a list of functions:
-##   set(y): stores a new matrix (y), clears the inverse matrix in the cache;
-##   get(): returns the matrix stored;
-##   set_inv(new_inv): stores a new inverse (new_inv) to the matrix stored;
-##   get_inv(): returns the inverse matrix in the cache, if it has been 
-##              calculated already 
-##   Obs.: When using the set_inv function, make sure that the argument being
-##         passed is in fact, the inverse. I advise to only call this function
-##         inside the cacheSolve function.
+## makeCacheMatrix:
+##  Returns a list of functions (set, get, set_inv, get_inv)
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -34,11 +42,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
-## cacheSolve
-##  Returns the inverse matrix.
-##   If the inverse has already been calculated, it gets the matrix from the cache 
-##   Otherwise, it calculates the inverse, and saves the inverse in the cache
+## cacheSolve: R
+##  Returns the inverse matrix
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
