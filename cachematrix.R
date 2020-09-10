@@ -7,8 +7,8 @@
 ##  Returns a list of functions:
 ##   set(y): stores a new matrix (y), and clears the inverse matrix (inv) in the cache;
 ##   get(): returns the matrix (x) stored;
-##   set_inv(new_inv): stores a new inverse (new_inv) of the matrix stored;
-##   get_inv(): returns the inverse matrix in the cache, if it has been 
+##   set_inv(new_inv): stores a new inverse (new_inv) of the matrix stored (x);
+##   get_inv(): returns the inverse matrix (inv) in the cache, if it has been 
 ##              calculated already 
 ##   Obs 1: When using the set_inv function, make sure that the argument being
 ##          passed is in fact, the inverse. I advise to only call this function
