@@ -3,6 +3,8 @@
 
 
 ## makeCacheMatrix
+##  Parameters:
+##   x: if passed, must be a square matrix
 ##  Stores a matrix (x) and its inverse (inv), if calculated.
 ##  Returns a list of functions:
 ##   set(y): stores a new matrix (y), and clears the inverse matrix (inv) in the cache;
